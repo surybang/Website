@@ -1,4 +1,4 @@
 import streamlit as st
 
 
-st.title('HEY 2')
+st.title("HEY 2")

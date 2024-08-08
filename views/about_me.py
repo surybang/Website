@@ -14,9 +14,7 @@ with col1:
 
 with col2:
     st.title("Fabien HOS", anchor=False)
-    st.write(
-        "Data scientist"
-    )
+    st.write("Data scientist")
     if st.button("📩 Contactez moi"):
         show_contact_form()
 
