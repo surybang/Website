@@ -20,12 +20,22 @@ with col2:
         if st.button("📩 Contactez moi"):
             show_contact_form()
     with col4:
-        if st.button("📜 Mon CV"):
-            st.write('cv')
+        pdf_file_path = "./assets/CV_FABIEN_HOS_DATA_SCIENTIST.pdf"
 
+        with open(pdf_file_path, "rb") as pdf_file:
+            pdf_contents = pdf_file.read()
 
+        # Create a download button for the PDF file
+        st.download_button(
+            label="📜 Mon CV",
+            data=pdf_contents,
+            file_name="CV_FABIEN_HOS_DATA_SCIENTIST.pdf",
+            mime="application/pdf"
+        )
+# -----------
 # Expériences
-tab1, tab2, tab3 = st.tabs(["Expériences", "Formations", "Projets"])
+# -----------
+tab1, tab2, tab3, tab4, tab5 = st.tabs(["Expériences", "Formations", "Projets", "Hard skills", "Soft skills"])
 with tab1:
     st.subheader("Mes expériences professionnelles", anchor=False)
     with st.expander("Professeur vacataire au CNAM"):
@@ -95,17 +105,56 @@ with tab1:
         """
         <p>J'ai rejoins l'entreprise Technema en 2016 pendant 2 ans en tant qu'apprenti développeur</p>
         <p>J'avais en charge le recueil des besoins clients et la création de nouvelles fonctionnalités sur notre ERP.</p>
-        <p>J'ai notamment développé un service de tracking de commandes en PHP.</p>
+        <p>J'ai notamment développé un service de tracking des commandes en PHP.</p>
         <p>J'utilisais pour cela des webservices pour mettre à jour les statuts des commandes.</p>
     
-        <p>Technologies utilisées : Windev, SQL, PHP, HTML CSS, JS. </p>
+        <p>Technologies utilisées : Windev, SQL, PHP, HTML&CSS, JS. </p>
         """,
         unsafe_allow_html=True,
         )
 
-
+# -----------
 # Formations
+# -----------
+with tab2:
+    st.subheader("Mes formations", anchor=False)
+    with st.expander("Master MÉDAS en alternance"):
+        st.markdown(
+        """
 
+        """,
+        unsafe_allow_html=True,
+        )
+
+    with st.expander("Licence Datamining en alternance"):
+        st.markdown(
+        """
+
+        """,
+        unsafe_allow_html=True,
+        )
+    
+    with st.expander("Licence MIAGE en alternance"):
+        st.markdown(
+        """
+
+        """,
+        unsafe_allow_html=True,
+        )
+
+    with st.expander("BTS SIO-SLAM en alternance"):
+        st.markdown(
+        """
+
+        """,
+        unsafe_allow_html=True,
+        )
+    
+
+# -----------
 # Hard skills
+# -----------
 
+# -----------
 # Soft skills
+# -----------

@@ -4,7 +4,7 @@ import streamlit as st
 about_page = st.Page(
     page="views/about_me.py",
     title="À propos",
-    icon=":material/account_circle:",
+    icon="👀",
     default=True,
 )
 
@@ -20,7 +20,13 @@ interest_1_page = st.Page(
     icon= "📖",
 )
 
-pg = st.navigation({"Info": [about_page], "Projects": [project_1_page], "Intérêts": [interest_1_page]})
+interest_2_page = st.Page(
+    page="views/games.py",
+    title="Compétition",
+    icon="🎮",
+)
+
+pg = st.navigation({"Info": [about_page], "Projects": [project_1_page], "Intérêts": [interest_1_page, interest_2_page]})
 st.sidebar.markdown("Made with ☕ by [Fabien](https://github.com/surybang/Website)")
 
 pg.run()
