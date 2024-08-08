@@ -14,8 +14,13 @@ project_1_page = st.Page(
     icon="😎",
 )
 
+interest_1_page = st.Page(
+    page = "views/Lectures.py",
+    title= "Livres",
+    icon= "📖",
+)
 
-pg = st.navigation({"Info": [about_page], "Projects": [project_1_page]})
-
+pg = st.navigation({"Info": [about_page], "Projects": [project_1_page], "Intérêts": [interest_1_page]})
+st.sidebar.markdown("Made with ☕ by [Fabien](https://github.com/surybang/Website)")
 
 pg.run()

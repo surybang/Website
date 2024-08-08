@@ -41,12 +41,14 @@ def contact_form():
                 "template_id": EMAILJS_TEMPLATE_ID,
                 "user_id": EMAILJS_PUBLIC_KEY,
                 "accessToken": EMAILJS_PRIVATE_KEY,
-                "template_params": {"from_name": name, "from_email": email, "message": message},
+                "template_params": {
+                    "from_name": name,
+                    "from_email": email,
+                    "message": message,
+                },
             }
 
-            headers = {
-                "Content-Type": "application/json"
-            }
+            headers = {"Content-Type": "application/json"}
             response = requests.post(EMAILJS_URL, json=data, headers=headers)
 
             if response.status_code == 200:
