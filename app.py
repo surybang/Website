@@ -1,7 +1,6 @@
 import streamlit as st
 
 
-
 about_page = st.Page(
     page="views/about_me.py",
     title="À propos",

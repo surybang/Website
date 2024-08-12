@@ -44,7 +44,7 @@ with tab1:
     st.subheader("Mes expériences professionnelles", anchor=False)
     with st.expander("Professeur vacataire au CNAM"):
         st.markdown(
-        """
+            """
         Je commence en **septembre 2024** une nouvelle aventure en tant que **professeur vacataire** au sein de mon ancien Master MEDAS.
 
         Il y a **deux objectifs** à cela :
@@ -127,7 +127,8 @@ with tab1:
             
             ⌨️ <span style="font-variant-caps: small-caps;">langages de programmation utilisés</span> : Windev, SQL, PHP, HTML & CSS, JS
             """,
-                unsafe_allow_html=True)
+            unsafe_allow_html=True,
+        )
 
 # -----------
 # Formations
@@ -195,7 +196,7 @@ with tab3:
         
         ---
         """,
-            unsafe_allow_html=True,
+        unsafe_allow_html=True,
     )
     with st.expander("SQLingo 😎"):
         st.markdown(
@@ -217,8 +218,9 @@ with tab3:
             Langages de programmation utilisées : Python et SQL   
             Frameworks : DuckDB, Streamlit
             """,
-                 unsafe_allow_html=True)
-    
+            unsafe_allow_html=True,
+        )
+
     with st.expander("Search Operator 📞"):
         st.markdown(
             """
@@ -245,9 +247,8 @@ with tab3:
             <br>
             Frameworks : DuckDB, FastAPI, Streamlit
             """,
-                unsafe_allow_html=True
+            unsafe_allow_html=True,
         )
-    
 
     with st.expander("Scanner 2d-Doc 🔎"):
         st.markdown(
@@ -264,7 +265,8 @@ with tab3:
             <br>
             Framework : Flask
             """,
-                unsafe_allow_html=True)
+            unsafe_allow_html=True,
+        )
         st.image("./assets/exemple 2ddoc.JPG", width=125)
 
 # -----------

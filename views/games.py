@@ -21,4 +21,3 @@ J'ai également été coach-analyst en bénévolat pour des équipes semi-profes
 """
 )
 st.markdown("---")
-
