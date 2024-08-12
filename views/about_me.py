@@ -15,7 +15,7 @@ with col1:
 with col2:
     st.title("Fabien HOS", anchor=False)
     st.write("Data scientist")
-    col3, col4 = st.columns(2, gap='small', vertical_alignment='center')
+    col3, col4 = st.columns(2, gap="small", vertical_alignment="center")
     with col3:
         if st.button("📩 Contactez moi"):
             show_contact_form()
@@ -31,29 +31,30 @@ with col2:
             label="📜 Mon CV",
             data=pdf_contents,
             file_name="CV_FABIEN_HOS_DATA_SCIENTIST.pdf",
-            mime="application/pdf"
+            mime="application/pdf",
         )
-        
+
 # -----------
 # Expériences
 # -----------
-tab1, tab2, tab3, tab4 = st.tabs(["Expériences", "Formations", "Projets", "Compétences"])
+tab1, tab2, tab3, tab4 = st.tabs(
+    ["Expériences", "Formations", "Projets", "Compétences"]
+)
 with tab1:
     st.subheader("Mes expériences professionnelles", anchor=False)
     with st.expander("Professeur vacataire au CNAM"):
         st.markdown(
-            """
-        <div style='font-size: 20px; font-family: Arial, sans-serif; line-height: 1.5;'>
-            <p><strong>Je commence en septembre 2024 une nouvelle aventure en tant que professeur vacataire au sein de mon ancien <a href='https://https://formation.cnam.fr/rechercher-par-discipline/master-mega-donnees-et-analyse-sociale-medas--1085595.kjsp' target='_blank'>Master MEDAS. </a></strong></p>
-            <p>Il y a deux objectifs à cela :</p>
-            <ul>
-                <li>Continuer de me former en ayant accès à de précieuses ressources et à un réseau de chercheurs 👨‍🎓🔍</li>
-                <li>Satisfaire mon envie de transmettre des connaissances 📚📖</li>
-            </ul>
-            <p> Les domaines enseignés seront Excel et Python 📈🐍 </p>
-            <p>Plus d'infos sur le repos Github <a href='https://github.com/surybang/Cours-MEDAS' target='_blank'>ici</a>.</p>
-            <p> <p>
-        </div>
+        """
+        Je commence en **septembre 2024** une nouvelle aventure en tant que **professeur vacataire** au sein de mon ancien Master MEDAS.
+
+        Il y a **deux objectifs** à cela :
+
+        1. 👨‍🏫 Poursuivre ma formation grâce à un accès à des ressources précieuses et à un réseau de chercheurs
+        2. 📚 Satisfaire mon envie de transmettre des connaissances
+        
+        Les domaines enseignés sont Excel et Python. 🐍
+
+        Plus d'infos sur le repos Github <a href='https://github.com/surybang/Cours-MEDAS' target='_blank'>ici</a>.
         """,
             unsafe_allow_html=True,
         )
@@ -61,38 +62,38 @@ with tab1:
     with st.expander("Data scientist à la CASDEN Banque populaire"):
         st.markdown(
             """
-            <div style='font-size: 20px; font-family: Arial, sans-serif; line-height: 1.5;'>
-            <p> Je suis Data Scientist spécialisé dans <strong>la lutte contre la fraude depuis 2021.</p>
-            <p> En tant qu'alternant au sein d'une équipe métier, j'ai réussi à démocratiser l'utilisation du Machine Learning pour améliorer l'activité. </p>
-            <p> Faits notables : <p>
-            <ul>
-                <li> Développement d'une application avec Flask pour lire 2D-DOC afin de lutter contre la fraude documentaire. </li>
-                <li> J'ai développé un modèle permettant de détecter <strong>100% des cas de fraude</strong> sur un scénario précis avec de <i>l'open data</i>. 
-                Ce modèle génère également peu de cas <i>faux-positifs</i>. </li>
-                <li> Je pilote un projet à l'échelle de la banque pour créer et harmoniser une piste d'audit concernant les logs applicatives.
-                 Cette piste d'audit est developpée dans le cadre de la lutte contre la fraude interne grâce à une interface de recherche. </li>
-                <li> J'ai imaginé des scénarios de fraude qui se sont avérés être positifs. </li>
-            </ul>
-            <p> Technologies utilisées : SAS, Python, SQL, Git </p>
-            </div>
+            Je suis Data Scientist spécialisé dans la lutte contre la fraude depuis 2021. En tant qu'alternant au sein d'une équipe métier, j'ai réussi à **démocratiser l'utilisation du Machine Learning** pour améliorer l'activité.
+
+            Faits notables :
+
+            - 💻 Développement d'une application avec Flask pour **lire les 2D-DOC** afin de lutter contre la fraude documentaire
+            
+            - 🐱‍👤 Mise en place d'un modèle permettant de **détecter 100 % des cas de fraude sur un scénario précis** à l'aide de l'*open data*, générant également peu de *faux positifs*
+
+            - 🏦 Pilotage d'un projet à l'échelle de la banque visant à **créer et harmoniser une piste d'audit pour les logs applicatifs** dans le cadre de la lutte contre la fraude interne
+
+            - 📝 **Conception de scénarios de fraude externe** qui se sont avérés efficaces
+            
+            ⌨️ <span style="font-variant-caps: small-caps;">langages de programmation utilisés</span> : SAS, Python et SQL
+            
+
             """,
             unsafe_allow_html=True,
         )
 
-    with st.expander("Freelance"):
+    with st.expander("Développeur en Freelance"):
         st.markdown(
             """
-            <div style='font-size: 20px; font-family: Arial, sans-serif; line-height: 1.5;'>
-            <p>Je me suis exercé à la profession de Développeur en freelance pendant la crise du COVID-19.</p>
-            <p>J'ai aidé des artisans et commerçants à transitionner vers des solutions numériques pour leurs activités.</p>
-            <p>Mes principales missions étaient les suivantes : </p>
-            <ul>
-                <li>Développement de sites web </li>
-                <li>Développement d'applications en VBA (comptabilité, gestion d'inventaire..)</li>
-                <li>Maintenance informatique associée </li>
-            </ul>
-            <p> Technologies utilisées : PHP, HTML&CSS, JS, VBA </p>
-            </div>
+            Je me suis exercé à la profession de Développeur en freelance pendant la crise du COVID-19. J'ai aidé des artisans et commerçants à **transitionner vers des solutions numériques pour leurs activités.**
+
+            Mes principales missions étaient les suivantes :
+
+            - 💻 Développement de sites web
+            - 📊 Développement d'applications en VBA (comptabilité, gestion d'inventaire...)
+            - 🔧 Maintenances informatiques associées
+
+
+            ⌨️ <span style="font-variant-caps: small-caps;">langages de programmation utilisés</span> : PHP, HTML & CSS, JS, VBA
             """,
             unsafe_allow_html=True,
         )
@@ -100,71 +101,150 @@ with tab1:
     with st.expander("Data analyst au Crédit Agricole IDF"):
         st.markdown(
             """
-            <div style='font-size: 20px; font-family: Arial, sans-serif; line-height: 1.5;'>
-            <p>En 2018, j'ai rejoins le Crédit Agricole IDF pendant 1 an en tant que Data analyst en alternance.</p>
-            <p>J'avais en charge le recueil des besoins métiers et la création des <i>dashboards</i> automatisés.</p>
-            <p>J'ai notamment développé une solution de signature électronique avec l'API de YouSign en VBA.</p> 
-            <p>Technologies utilisées : VBA, SQL </p>
-            </div>
+            En 2018, j'ai rejoint le Crédit Agricole IDF pendant 1 an en tant que Data Analyst en alternance.
+
+            Mes principales missions étaient les suivantes :
+
+            - 📖 Prise en charge du recueil des besoins métiers
+            - 📅 Création des dashboards automatisés
+            - 💻 Développement d'une solution de signature électronique avec l'API de YouSign en VBA
+
+            ⌨️ <span style="font-variant-caps: small-caps;">langages de programmation utilisés</span>: VBA, SQL
             """,
             unsafe_allow_html=True,
         )
-    
+
     with st.expander("Développeur chez Technema"):
         st.markdown(
-        """
-        <div style='font-size: 20px; font-family: Arial, sans-serif; line-height: 1.5;'>
-        <p>J'ai rejoins l'entreprise Technema en 2016 pendant 2 ans en tant qu'apprenti développeur</p>
-        <p>J'avais en charge le recueil des besoins clients et la création de nouvelles fonctionnalités sur notre ERP.</p>
-        <p>J'ai notamment développé un service de tracking des commandes en PHP.</p>
-        <p>J'utilisais pour cela des webservices pour mettre à jour les statuts des commandes.</p>
-    
-        <p>Technologies utilisées : Windev, SQL, PHP, HTML&CSS, JS. </p>
-        </div>
-        """,
-        unsafe_allow_html=True,
-        )
+            """
+            En 2016, j'ai rejoint l'entreprise Technema pendant 2 ans en tant qu'apprenti développeur.
+
+            Mes principales missions étaient les suivantes :
+
+            - 📖 Prise en charge **du recueil des besoins clients**
+            - 🔧 Création de **nouvelles fonctialités** sur notre ERP
+            - 🔎 Développement **d'un service de tracking** web des commandes en PHP en utilisant des webservices afin de mettre à jour les status des commandes
+            
+            <span style="font-variant-caps: small-caps;">langages de programmation utilisés</span> : Windev, SQL, PHP, HTML & CSS, JS
+            """,
+                unsafe_allow_html=True)
 
 # -----------
 # Formations
 # -----------
 with tab2:
     st.subheader("Mes formations", anchor=False)
-    with st.expander("2022/2024 - Master MÉDAS en alternance - Conservatoire national des Arts et Métiers"):
+    with st.expander(
+        "2022/2024 - Master MÉDAS en alternance - Conservatoire national des Arts et Métiers"
+    ):
         st.markdown(
-        """
-        Module supplémentaire sur le <a href='https://cedric.cnam.fr/vertigo/Cours/ml2/' target='_blank'>Deep Learning</a>
+            """
+        Enseignements : <a href = 'https://formation.cnam.fr/rechercher-par-discipline/master-mega-donnees-et-analyse-sociale-medas--1085595.kjsp' target= '_blank'> Site web du Master </a>
+
+        Module supplémentaire sur le <a href='https://cedric.cnam.fr/vertigo/Cours/ml2/' target='_blank'>Deep Learning</a> en cours du soir.
+        
+        Mémoire : L'utilisation des données ouvertes dans la lutte contre la fraude bancaire
+        
+        Niveau : Très bien
         """,
-        unsafe_allow_html=True,
+            unsafe_allow_html=True,
         )
 
-    with st.expander("2021/2022 - L3 Datamining en alternance - Université Gustave Eiffel"):
+    with st.expander(
+        "2021/2022 - L3 Datamining en alternance - Université Gustave Eiffel"
+    ):
         st.markdown(
-        """
-
+            """
+        Enseignements : <a href = 'https://formations.univ-gustave-eiffel.fr/licence/detail/decision-et-traitement-de-linformation-data-mining-193' target= '_blank'>Site web de la Licence</a>
+        
+        Niveau : Très bien
         """,
-        unsafe_allow_html=True,
+            unsafe_allow_html=True,
         )
-    
+
     with st.expander("2018/2019 - L3 MIAGE en alternance - Paris Descartes"):
         st.markdown(
-        """
+            """
+        Enseignements : <a href = 'https://iutparis-seine.u-paris.fr/informatique/l3-parcours-miage/' target= '_blank'>Site web de la Licence</a>
 
+        Niveau : Bien
         """,
-        unsafe_allow_html=True,
+            unsafe_allow_html=True,
         )
 
-    with st.expander("2016/2018 - BTS SIO-SLAM en alternance - Université Paris-Est Marne-la-Vallée"):
+    with st.expander(
+        "2016/2018 - BTS SIO-SLAM en alternance - Université Paris-Est Marne-la-Vallée"
+    ):
+        st.markdown(
+            """
+        Enseignements : <a href = 'https://www.utec77.fr/bts-services-informatiques-aux-organisations-sio-option-solutions-logicielles-et-applications' target= '_blank'>Site web du BTS</a>
+        
+        Niveau : Très bien
+        """,
+            unsafe_allow_html=True,
+        )
+
+# -----------
+# Projets
+# -----------
+with tab3:
+    st.subheader("Mes projets", anchor=False)
+    st.markdown(
+        """
+        Tous mes différents projets sont disponibles sur <a href = 'https://github.com/surybang' target= '_blank'>GitHub</a> mais je vous propose de découvrir ici les plus significatifs.
+        
+        ---
+        """,
+            unsafe_allow_html=True,
+    )
+    with st.expander("SQLingo 😎"):
+        st.markdown(
+            """
+            **SQLingo est une application d'apprentissage du langage SQL basé sur le SRS**.
+
+            **C'est quoi le SRS ?** 🤔
+            
+            Le SRS est le **Spaced Repetition System**, une méthode d'apprentissage basé la répétition sur un laps de temps relatif à chacun.
+            
+            Les mêmes exercices sont proposés aux utilisateurs et ces derniers peuvent choisir eux même la durée à partir de laquelle ils pourront les revoir.
+
+            Par exemple, si un exercice est trop simple, ils peuvent choisir de le revoir dans 7 jours et si au contraire un exercice est compliqué, ils peuvent le revoir dès le lendemain.
+
+            J'ai également mis en place un système d'authentification avec le package python "bcrypt". 
+
+            L'application est developpée avec le langage Python, le Framework Streamlit et les données sont stockées avec DuckDB.
+
+            <a href='https://github.com/surybang/SQL-srs' target='_blank'>Lien vers le repos GitHub </a>
+            """,
+                 unsafe_allow_html=True)
+    
+    with st.expander("Search Operator 📞"):
         st.markdown(
         """
+        **Search Operator est une application pour identifier un opérateur téléphonique à partir d'un numéro de téléphone.**
+        
+        Plusieurs étapes dans ce projet : 
 
+        1. Je recupère les données de l'ARCEP (l'Autorité française de Régulation des Communications Électroniques et des Postes).
+
+        2. À partir des deux csv récupérés, je fabrique un nouveau dataset avec l'identifiant des numéros de téléphone et le nom des attributaires.
+        J'enregistre ensuite ce dernier dans une base de données DuckDB.
+
+        3. J'ai developpées différentes fonctions permettant de rechercher un numéro par son idenfiant ou par le nom de l'opérateur.
+
+        4. Une API développée avec FastAPI vient ensuite servir une interface utilisateur développée avec Streamlit.
+
+        **Pourquoi voudriez-vous identifier un opérateur téléphonique ?** 🤔
+        
+        Si cette question vous intrigue, je serais ravi de vous fournir une réponse détaillée lors d'un entretien.🤗
+        
+        <a href='https://github.com/surybang/Search-Operator' target='_blank'>Lien vers le repos GitHub</a>
         """,
-        unsafe_allow_html=True,
+            unsafe_allow_html=True
         )
-    
 
 # -----------
 # Compétences
 # -----------
 
-#expander hard, soft
+# expander hard, soft

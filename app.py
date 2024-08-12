@@ -1,6 +1,7 @@
 import streamlit as st
 
 
+
 about_page = st.Page(
     page="views/about_me.py",
     title="À propos",
@@ -8,16 +9,16 @@ about_page = st.Page(
     default=True,
 )
 
-project_1_page = st.Page(
-    page="views/SQL_srs.py",
-    title="SQLingo",
-    icon="😎",
-)
+# project_1_page = st.Page(
+#     page="views/SQL_srs.py",
+#     title="SQLingo",
+#     icon="😎",
+# )
 
 interest_1_page = st.Page(
-    page = "views/Lectures.py",
-    title= "Livres",
-    icon= "📖",
+    page="views/Lectures.py",
+    title="Livres",
+    icon="📖",
 )
 
 interest_2_page = st.Page(
@@ -26,7 +27,13 @@ interest_2_page = st.Page(
     icon="🎮",
 )
 
-pg = st.navigation({"Info": [about_page], "Projets": [project_1_page], "Intérêts": [interest_1_page, interest_2_page]})
+pg = st.navigation(
+    {
+        "Info": [about_page],
+        # "Projets": [project_1_page],
+        "Intérêts": [interest_1_page, interest_2_page],
+    }
+)
 st.sidebar.markdown("Made with ☕ by [Fabien](https://github.com/surybang/Website)")
 
 pg.run()
