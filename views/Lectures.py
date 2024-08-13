@@ -19,7 +19,7 @@ with tab1:
     with st.expander("The Elements of Statistical Learning"):
         col1, col2 = st.columns(2, gap="small", vertical_alignment="center")
         with col1:
-            st.image("./assets/EOS.jpg", use_column_width="auto")
+            st.image("./assets/THE_EOSL.png", use_column_width="auto")
 
         with col2:
             st.markdown(
