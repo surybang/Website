@@ -21,7 +21,7 @@ with col2:
             show_contact_form()
 
     with col4:
-        pdf_file_path = "./assets/CV_FABIEN_HOS_DATA_SCIENTIST.pdf"
+        pdf_file_path = "./assets/CV_FabienHOS_DataScientist.pdf"
 
         with open(pdf_file_path, "rb") as pdf_file:
             pdf_contents = pdf_file.read()
@@ -30,13 +30,13 @@ with col2:
         st.download_button(
             label="📜 Mon CV",
             data=pdf_contents,
-            file_name="CV_FABIEN_HOS_DATA_SCIENTIST.pdf",
+            file_name="CV_FabienHOS_DataScientist.pdf",
             mime="application/pdf",
         )
 
 # st.markdown(
 #     """
-#     Data Scientist avec 3 ans d'expérience, spécialisé dans la modélisation prédictive et l'optimisation de la chaîne de valeur des données du secteur bancaire. 
+#     Data Scientist avec 3 ans d'expérience, spécialisé dans la modélisation prédictive et l'optimisation de la chaîne de valeur des données du secteur bancaire.
 #     <br>
 #     Passionné par la résolution de problématiques métiers et le développement d'applications qui améliorent le quotidien de l'entreprise
 #     """, unsafe_allow_html=True)
@@ -49,7 +49,8 @@ st.markdown(
             
     🔎 Actuellement à la recherche d'un poste en CDI pour approfondir mes compétences tout en apportant une valeur ajoutée significative.
         """,
-          unsafe_allow_html=True)
+    unsafe_allow_html=True,
+)
 
 
 # -----------
@@ -60,9 +61,9 @@ tab1, tab2, tab3, tab4 = st.tabs(
 )
 with tab1:
     st.subheader("Mes expériences professionnelles", anchor=False)
-    
+
     with st.expander("Data scientist à la CASDEN Banque populaire"):
-        # + de missions, écriture de programmes SAS, traduction SAS -> Python, 
+        # + de missions, écriture de programmes SAS, traduction SAS -> Python,
         st.markdown(
             """
             Je suis Data Scientist spécialisé dans la lutte contre la fraude depuis 2021. En tant qu'alternant au sein d'une équipe métier, j'ai réussi à **démocratiser l'utilisation du Machine Learning** pour améliorer l'activité.
@@ -84,7 +85,7 @@ with tab1:
             unsafe_allow_html=True,
         )
 
-    with st.expander("Professeur vacataire au CNAM"):   
+    with st.expander("Professeur vacataire au CNAM"):
         st.markdown(
             """
         Je commence en **septembre 2024** une nouvelle aventure en tant que **professeur vacataire** au sein de mon ancien Master MEDAS.
@@ -188,7 +189,7 @@ with tab2:
             """
         Enseignements : <a href = 'https://iutparis-seine.u-paris.fr/informatique/l3-parcours-miage/' target= '_blank'>Site web de la Licence</a>
 
-        Niveau : Bien
+        **Niveau : Bien**
         """,
             unsafe_allow_html=True,
         )
@@ -291,13 +292,15 @@ with tab3:
 # Compétences
 # -----------
 
-with tab4 :
+with tab4:
     with st.expander("Hard skills"):
-        st.markdown("""
+        st.markdown(
+            """
         #### Programmation 👨🏼‍💻
         - **Python** : Maitrise des packages Pandas et Seaborn, j'utilise également NumPy et Matplotlib.
         - **SAS** : Maitrise du langage.
-        - **SQL** : Maitrise des concepts généraux. (Joins, Windows Functions, CTE ...)
+        - **SQL** : Maitrise des concepts généraux. (Joins, Windows Functions, Group, CTE ...)
+        - **R** : Maitrise du langage, utilisé dans mon parcours universitaire uniquement.
         - **PySpark** : Apprentissage en cours.
         - **PyTorch et TensorFlow** : Connaissance de base pour le deep learning avec des projets universitaires.
 
@@ -332,7 +335,30 @@ with tab4 :
         - **CI/CD** : Familiarité avec les pipelines d'intégration et de déploiement continus pour maintenir la qualité du code.
         - **Airflow**
         
-        """)
+        """
+        )
 
     with st.expander("Soft skills"):
-        st.write("")
+        st.markdown(
+            """
+        ##### Créativité 💡
+        Ma créativité se manifeste dans ma capacité à identifier et à intégrer des ressources externes pour résoudre des problèmes complexes.
+        <br> 
+        Un exemple notable est mon approche lors d'un projet de lutte contre la fraude, où j'ai utilisé des données open data pour développer des indicateurs innovants qui ont significativement amélioré la performance du modèle.
+
+        ##### Esprit critique 🧠
+        Doté d'un esprit critique, je ne me contente pas de prendre les observations pour acquis. Je m'engage à analyser en profondeur et à questionner les données pour en extraire les insights les plus pertinents, garantissant ainsi l'intégrité et la précision de nos projets.
+
+        ##### Force de proposition 👊
+        En tant qu'unique référent data de mon service pendant mon alternance, j'ai pris l'initiative de proposer et d'implémenter de nouvelles méthodes de travail, conduisant à des améliorations significatives de nos processus.
+
+        ##### Organisation 🟧
+        Ma capacité à organiser et planifier le flux de travail se manifeste par une  gestion du temps et une approche méthodique pour segmenter les étapes d'un projet, assurant une exécution efficace.
+
+        ##### Communication 📢
+        Je communique efficacement avec les équipes métiers et techniques, facilitant un dialogue constructif et une compréhension mutuelle. 
+        <br>
+        Mon expérience en tant que professeur vacataire enrichit cette compétence.
+        """,
+            unsafe_allow_html=True,
+        )
