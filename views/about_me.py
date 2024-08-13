@@ -14,7 +14,7 @@ with col1:
 
 with col2:
     st.title("Fabien HOS", anchor=False)
-    st.write("Data scientist")
+    # st.write("Data scientist")
     col3, col4 = st.columns(2, gap="small", vertical_alignment="center")
     with col3:
         if st.button("📩 Contactez moi"):
@@ -34,9 +34,23 @@ with col2:
             mime="application/pdf",
         )
 
-st.markdown("""
-        En tant que Data scientist depuis **3 ans** au sein de la Casden Banque Populaire
-            """)
+# st.markdown(
+#     """
+#     Data Scientist avec 3 ans d'expérience, spécialisé dans la modélisation prédictive et l'optimisation de la chaîne de valeur des données du secteur bancaire. 
+#     <br>
+#     Passionné par la résolution de problématiques métiers et le développement d'applications qui améliorent le quotidien de l'entreprise
+#     """, unsafe_allow_html=True)
+
+st.markdown(
+    """
+    Data Scientist avec 3 ans d'expérience, je suis spécialisé dans la modélisation prédictive et l'optimisation de la chaîne de valeur des données dans le secteur bancaire. \
+    <br>
+    Je suis passionné par la résolution de problématiques métiers et le développement d'applications qui améliorent le quotidien de l'entreprise.
+            
+    🔎 Actuellement à la recherche d'un poste en CDI pour approfondir mes compétences tout en apportant une valeur ajoutée significative.
+        """,
+          unsafe_allow_html=True)
+
 
 # -----------
 # Expériences
@@ -46,23 +60,7 @@ tab1, tab2, tab3, tab4 = st.tabs(
 )
 with tab1:
     st.subheader("Mes expériences professionnelles", anchor=False)
-    with st.expander("Professeur vacataire au CNAM"):
-        st.markdown(
-            """
-        Je commence en **septembre 2024** une nouvelle aventure en tant que **professeur vacataire** au sein de mon ancien Master MEDAS.
-
-        Il y a **deux objectifs** à cela :
-
-        - 👨‍🎓 Poursuivre ma formation grâce à un accès à des ressources et à un réseau de chercheurs
-        - 📚 Satisfaire mon envie de transmettre des connaissances
-        
-        Les domaines enseignés sont Excel et Python. 🐍
-
-        Plus d'infos sur le repos Github <a href='https://github.com/surybang/Cours-MEDAS' target='_blank'>ici</a>.
-        """,
-            unsafe_allow_html=True,
-        )
-
+    
     with st.expander("Data scientist à la CASDEN Banque populaire"):
         # + de missions, écriture de programmes SAS, traduction SAS -> Python, 
         st.markdown(
@@ -83,6 +81,23 @@ with tab1:
             
 
             """,
+            unsafe_allow_html=True,
+        )
+
+    with st.expander("Professeur vacataire au CNAM"):   
+        st.markdown(
+            """
+        Je commence en **septembre 2024** une nouvelle aventure en tant que **professeur vacataire** au sein de mon ancien Master MEDAS.
+
+        Il y a **deux objectifs** à cela :
+
+        - 👨‍🎓 Poursuivre ma formation grâce à un accès à des ressources et à un réseau de chercheurs
+        - 📚 Satisfaire mon envie de transmettre des connaissances
+        
+        Les domaines enseignés sont Excel et Python. 🐍
+
+        Plus d'infos sur le repos Github <a href='https://github.com/surybang/Cours-MEDAS' target='_blank'>ici</a>.
+        """,
             unsafe_allow_html=True,
         )
 
@@ -287,14 +302,16 @@ with tab4 :
         - **PyTorch et TensorFlow** : Connaissance de base pour le deep learning avec des projets universitaires.
 
         #### Base de données 🛢️
-        - **PostgreSQL** : Expérience pratique avec les systèmes de gestion de base de données relationnelle.
-        - **Oracle** : Expérience avec les configurations d'entreprise et les optimisations.
+        - **PostgreSQL**
+        - **Oracle**
+        - **DuckDB & SQLite3**
+        - **MongoDB**
 
         #### Modélisations prédictives 🤖
         - Connaissances fondamentales sur les techniques de **régressions** et de **classifications**.
         - Expérience avec des librairies telles que **SciPy**, **Scikit-learn**, et **XGBoost** pour l'implémentation de modèles.
         
-        ### Cloud ☁️
+        #### Cloud ☁️
         - Bases sur Microsoft Azure.
                      
         #### GenAI 🧠
@@ -305,12 +322,15 @@ with tab4 :
         - **Nettoyage de données** : Capacité à traiter et à nettoyer les ensembles de données, incluant la gestion des valeurs manquantes, la correction des erreurs de format, et l'élimination des doublons, afin de garantir la précision des analyses. 
         - **Manipulation de données** : Utilisation de SQL et Pandas pour effectuer des opérations.
         - **Visualisation de données** : Utilisation de Seaborn, Plotly et Streamlit.
-
+        
+        #### Gestion du code source 🧙‍♂️
+        - Git : Maitrise des essentiels.
+                    
         #### MLOps ⚙️
         - **ML Flow** : Apprentissage en cours.
         - **Docker** : Apprentissage en cours, je sais utiliser une image et écrire un Dockerfile.
         - **CI/CD** : Familiarité avec les pipelines d'intégration et de déploiement continus pour maintenir la qualité du code.
-        - **Airflow** : CRON jobs.
+        - **Airflow**
         
         """)
 
