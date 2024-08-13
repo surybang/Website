@@ -247,12 +247,12 @@ with tab3:
             
             Plusieurs étapes dans ce projet : 
 
-            1. Je recupère les données de l'ARCEP (l'Autorité française de Régulation des Communications Électroniques et des Postes).
+            1. J'ai récupéré les données de l'ARCEP (l'Autorité française de Régulation des Communications Électroniques et des Postes).
 
             2. À partir des deux csv récupérés, je fabrique un nouveau dataset avec l'identifiant des numéros de téléphone et le nom des attributaires.
             J'enregistre ensuite ce dernier dans une base de données DuckDB.
 
-            3. J'ai developpées différentes fonctions permettant de rechercher un numéro par son idenfiant ou par le nom de l'opérateur.
+            3. J'ai developpé différentes fonctions permettant de rechercher un numéro par son identifiant ou par le nom de l'opérateur.
 
             4. Une API développée avec FastAPI vient ensuite servir une interface utilisateur développée avec Streamlit.
 
@@ -280,7 +280,7 @@ with tab3:
 
             La documentation utilisée est disponible sur <a href='https://ants.gouv.fr/nos-missions/les-solutions-numeriques/2d-doc' target='_blank'>le site officiel du gouvernement français</a>
 
-            <span style="font-variant-caps: small-caps;">langages de programmation utilisés</span> : Python et bash
+            <span style="font-variant-caps: small-caps;">langages de programmation utilisés</span> : Python et Bash
             <br>
             <span style="font-variant-caps: small-caps;">frameworks</span> : Flask
             """,
@@ -312,7 +312,7 @@ with tab4:
 
         #### Modélisations prédictives 🤖
         - Connaissances fondamentales sur les techniques de **régressions** et de **classifications**.
-        - Expérience avec des librairies telles que **SciPy**, **Scikit-learn**, et **XGBoost** pour l'implémentation de modèles.
+        - Expérience avec des librairies telles que **SciPy**, **Scikit-learn** et **XGBoost** pour l'implémentation de modèles.
         
         #### Cloud ☁️
         - Bases sur Microsoft Azure.
@@ -321,8 +321,8 @@ with tab4:
         - **Ollama et Hugging Face** : Apprentissage en cours, je sais récupérer des modèles et les utiliser localement.
                     
         #### Analyses de données 📊
-        - **Compétences en analyses descriptives** : Utilisation de statistiques descriptives , facilitant une compréhension rapide des tendances, des moyennes, et de la variabilité au sein des jeux de données.
-        - **Nettoyage de données** : Capacité à traiter et à nettoyer les ensembles de données, incluant la gestion des valeurs manquantes, la correction des erreurs de format, et l'élimination des doublons, afin de garantir la précision des analyses. 
+        - **Compétences en analyses descriptives** : Utilisation de statistiques descriptives , facilitant une compréhension rapide des tendances, des moyennes et de la variabilité au sein des jeux de données.
+        - **Nettoyage de données** : Capacité à traiter et à nettoyer les ensembles de données, incluant la gestion des valeurs manquantes, la correction des erreurs de format et l'élimination des doublons, afin de garantir la précision des analyses. 
         - **Manipulation de données** : Utilisation de SQL et Pandas pour effectuer des opérations.
         - **Visualisation de données** : Utilisation de Seaborn, Plotly et Streamlit.
         
