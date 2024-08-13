@@ -201,22 +201,20 @@ with tab3:
     with st.expander("SQLingo 😎"):
         st.markdown(
             """
-            **SQLingo est une application d'apprentissage du langage SQL basé sur le SRS**.
+            **SQLingo est une application d'apprentissage du langage SQL basé sur le SRS**
 
             **C'est quoi le SRS ?** 🤔
-            
-            Le SRS est le **Spaced Repetition System**, une méthode d'apprentissage basé la répétition sur un laps de temps relatif à chacun.
-            
-            Les mêmes exercices sont proposés aux utilisateurs et ces derniers peuvent choisir eux même la durée à partir de laquelle ils pourront les revoir.
 
-            Par exemple, si un exercice est trop simple, ils peuvent choisir de le revoir dans 7 jours et si au contraire un exercice est compliqué, ils peuvent le revoir dès le lendemain.
+            Le **SRS** ou **Spaced Repetition System** est une méthode d'apprentissage qui utilise la répétition d'exercices à intervalles réguliers adaptés aux besoins de chaque utilisateur. Les exercices sont révisés selon la préférence de l'utilisateur, par exemple, un exercice facile peut être programmé pour une révision dans sept jours, tandis qu'un exercice plus difficile peut être revu dès le lendemain.
 
-            J'ai également mis en place un système d'authentification avec le package python "bcrypt". 
+            **Accès à l'application**
+
+            L'application dispose également d'un système d'authentification. Pour un accès rapide en mode "invité", utilisez les identifiants suivants : **nom d'utilisateur/mot de passe : guest**.
 
             <a href='https://github.com/surybang/SQL-srs' target='_blank'>Lien vers le repos GitHub </a>
             
-            Langages de programmation utilisées : Python et SQL   
-            Frameworks : DuckDB, Streamlit
+            <span style="font-variant-caps: small-caps;">langages de programmation utilisés</span> : Python et SQL   
+            <span style="font-variant-caps: small-caps;">frameworks</span> : DuckDB, Streamlit
             """,
             unsafe_allow_html=True,
         )
@@ -243,9 +241,9 @@ with tab3:
             
             <a href='https://github.com/surybang/Search-Operator' target='_blank'>Lien vers le repos GitHub</a>
 
-            Langages de programmation utilisées : Python et SQL
+            <span style="font-variant-caps: small-caps;">langages de programmation utilisés</span> : Python et SQL
             <br>
-            Frameworks : DuckDB, FastAPI, Streamlit
+            <span style="font-variant-caps: small-caps;">frameworks</span> : DuckDB, FastAPI, Streamlit
             """,
             unsafe_allow_html=True,
         )
@@ -261,9 +259,9 @@ with tab3:
 
             La documentation utilisée est disponible sur <a href='https://ants.gouv.fr/nos-missions/les-solutions-numeriques/2d-doc' target='_blank'>le site officiel du gouvernement français</a>
 
-            Langages de programmation utilisées : Python et bash
+            <span style="font-variant-caps: small-caps;">langages de programmation utilisés</span> : Python et bash
             <br>
-            Framework : Flask
+            <span style="font-variant-caps: small-caps;">frameworks</span> : Flask
             """,
             unsafe_allow_html=True,
         )
@@ -272,5 +270,6 @@ with tab3:
 # -----------
 # Compétences
 # -----------
+
 
 # expander hard, soft

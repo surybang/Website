@@ -3,32 +3,33 @@ import streamlit as st
 st.subheader("Mes lectures 📚")
 st.write(
     """
-        Je suis un lecteur passionné, particulièrement attiré par les ouvrages techniques qui me permettent de constamment approfondir mes connaissances.
-         
-        J'apprécie de me plonger dans des lectures qui explorent des concepts complexes liés aux statistiques, à l'analyse de données, et à la programmation en général.
-        
-        Ces lectures m'aident à affiner mes compétences analytiques et à rester au fait des dernières avancées dans mon domaine. 
-         
-        Elles nourrissent également ma réflexion et mon approche méthodologique, que j'applique avec rigueur dans mes projets professionnels 
-        pour trouver des solutions innovantes et efficaces.
+    Je suis un lecteur passionné, surtout intéressé par les ouvrages techniques qui me permettent de continuer à approfondir mes connaissances.
+
+    J'aime explorer les concepts complexes en statistiques, analyse de données, et programmation. Ces lectures affinent mes compétences analytiques \
+    et me tiennent à jour sur les nouveautés de mon domaine. 
+    
+    Elles enrichissent aussi ma façon de penser et ma méthode de travail, que j'utilise \
+    pour trouver des solutions efficaces et adaptées dans mes projets professionnels et personnels.
          """
 )
 
 
-tab1, tab2, tab3, tab4 = st.tabs(
-    ["Data science", "Data engineering", "Poésie", "Autres"]
-)
+tab1, tab2 = st.tabs(["Data science", "Data engineering"])
 with tab1:
-    with st.expander("The elements of Statistical Learning"):
+    with st.expander("The Elements of Statistical Learning"):
         col1, col2 = st.columns(2, gap="small", vertical_alignment="center")
         with col1:
-            st.image("./assets/EOSL.jpeg", use_column_width="auto")
+            st.image("./assets/EOS.jpg", use_column_width="auto")
 
         with col2:
             st.markdown(
                 """
-                <strong>The Elements of Statistical Learning </strong>
-                <p>Ce livre contient toutes les connaissances à acquérir pour un data scientist.</p>
+                **The Elements of Statistical Learning**
+                
+                Auteurs :
+                - Trevor Hastie
+                - Robert Tibshirani
+                - Jerome Friedman
                 """,
                 unsafe_allow_html=True,
             )
@@ -41,8 +42,14 @@ with tab1:
         with col2:
             st.markdown(
                 """
-                <strong>Data Mining et statistique décisionnelle</strong>
-                <p>Ce livre contient toutes les connaissances à acquérir pour un data scientist.</p>
+                **Data Mining et statistique décisionnelle**
+                
+                Auteur :
+                - Stéphane Tufféry
+
+                Les livres associés, qui contiennent des cas pratiques en R et SAS sont également très intéressants. \
+                Ils ont été essentiels pour débuter mon apprentissage et continuent de me servir en tant que références.
+
                 """,
                 unsafe_allow_html=True,
             )
@@ -50,13 +57,15 @@ with tab1:
     with st.expander("Big Data, Machine Learning et Apprentissage profond"):
         col1, col2 = st.columns(2, gap="small", vertical_alignment="center")
         with col1:
-            st.image("./assets/DMSD.jpg", use_column_width="auto")
+            st.image("./assets/bigdata.jpg", use_column_width="auto")
 
         with col2:
             st.markdown(
                 """
-                <strong>Big Data, Machine Learning et Apprentissage profond</strong>
-                <p>Ce livre contient toutes les connaissances à acquérir pour un data scientist.</p>
+                **Big Data, Machine Learning et Apprentissage profond**
+                
+                Auteur :
+                - Stéphane Tufféry
                 """,
                 unsafe_allow_html=True,
             )
@@ -69,8 +78,10 @@ with tab1:
         with col2:
             st.markdown(
                 """
-                <strong>Hands on Machine Learning with Scikit-Learn and TensorFlow</strong>
-                <p>Ce livre contient toutes les connaissances à acquérir pour un data scientist.</p>
+                **Hands on Machine Learning with Scikit-Learn and TensorFlow**
+                
+                Auteur :
+                - Aurélien Géron
                 """,
                 unsafe_allow_html=True,
             )
@@ -83,8 +94,10 @@ with tab1:
         with col2:
             st.markdown(
                 """
-                <strong>Hands on Machine Learning with Scikit-Learn and TensorFlow</strong>
-                <p>Ce livre contient toutes les connaissances à acquérir pour un data scientist.</p>
+                **The Hundred-page Machine Learning book**
+                
+                Auteur :
+                - Andriy Burkov
                 """,
                 unsafe_allow_html=True,
             )
@@ -100,8 +113,10 @@ with tab1:
             with col2:
                 st.markdown(
                     """
-                    <strong>Hands on Machine Learning with Scikit-Learn and TensorFlow</strong>
-                    <p>Ce livre contient toutes les connaissances à acquérir pour un data scientist.</p>
+                    **Designing Machine learning systems an iterative process for production**
+                    
+                    Auteur :
+                    - Chip Huyen
                     """,
                     unsafe_allow_html=True,
                 )
@@ -113,8 +128,11 @@ with tab1:
             with col2:
                 st.markdown(
                     """
-                    <strong>Hands on Machine Learning with Scikit-Learn and TensorFlow</strong>
-                    <p>Ce livre contient toutes les connaissances à acquérir pour un data scientist.</p>
+                    **Fundamentals of Data Engineering**
+                    
+                    Auteurs :
+                    - Joe Reis 
+                    - Matt Housley
                     """,
                     unsafe_allow_html=True,
                 )
