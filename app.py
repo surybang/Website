@@ -33,6 +33,6 @@ pg = st.navigation(
         "Intérêts": [interest_1_page, interest_2_page],
     }
 )
-st.sidebar.markdown("Made with ☕ by [Fabien](https://github.com/surybang/Website)")
+st.sidebar.markdown("Made with ☕ by [Fabien](https://www.linkedin.com/in/fabien-hos/)")
 
 pg.run()

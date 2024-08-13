@@ -34,6 +34,10 @@ with col2:
             mime="application/pdf",
         )
 
+st.markdown("""
+        En tant que Data scientist depuis **3 ans** au sein de la Casden Banque Populaire
+            """)
+
 # -----------
 # Expériences
 # -----------
@@ -49,8 +53,8 @@ with tab1:
 
         Il y a **deux objectifs** à cela :
 
-        1. 👨‍🏫 Poursuivre ma formation grâce à un accès à des ressources précieuses et à un réseau de chercheurs
-        2. 📚 Satisfaire mon envie de transmettre des connaissances
+        - 👨‍🎓 Poursuivre ma formation grâce à un accès à des ressources et à un réseau de chercheurs
+        - 📚 Satisfaire mon envie de transmettre des connaissances
         
         Les domaines enseignés sont Excel et Python. 🐍
 
@@ -60,6 +64,7 @@ with tab1:
         )
 
     with st.expander("Data scientist à la CASDEN Banque populaire"):
+        # + de missions, écriture de programmes SAS, traduction SAS -> Python, 
         st.markdown(
             """
             Je suis Data Scientist spécialisé dans la lutte contre la fraude depuis 2021. En tant qu'alternant au sein d'une équipe métier, j'ai réussi à **démocratiser l'utilisation du Machine Learning** pour améliorer l'activité.
@@ -68,7 +73,7 @@ with tab1:
 
             - 💻 Développement d'une application avec Flask pour **lire les 2D-DOC** afin de lutter contre la fraude documentaire
             
-            - 💸 Mise en place d'un modèle permettant de **détecter 100 % des cas de fraude sur un scénario précis** à l'aide de l'*open data*, générant également peu de *faux positifs*
+            - 💸 Développement d'un modèle permettant de **détecter 100 % des cas de fraude sur un scénario précis** à l'aide de l'*open data*, générant également peu de *faux positifs*
 
             - 🏦 Pilotage d'un projet à l'échelle de la banque visant à **créer et harmoniser une piste d'audit pour les logs applicatifs** dans le cadre de la lutte contre la fraude interne
 
@@ -271,5 +276,43 @@ with tab3:
 # Compétences
 # -----------
 
+with tab4 :
+    with st.expander("Hard skills"):
+        st.markdown("""
+        #### Programmation 👨🏼‍💻
+        - **Python** : Maitrise des packages Pandas et Seaborn, j'utilise également NumPy et Matplotlib.
+        - **SAS** : Maitrise du langage.
+        - **SQL** : Maitrise des concepts généraux. (Joins, Windows Functions, CTE ...)
+        - **PySpark** : Apprentissage en cours.
+        - **PyTorch et TensorFlow** : Connaissance de base pour le deep learning avec des projets universitaires.
 
-# expander hard, soft
+        #### Base de données 🛢️
+        - **PostgreSQL** : Expérience pratique avec les systèmes de gestion de base de données relationnelle.
+        - **Oracle** : Expérience avec les configurations d'entreprise et les optimisations.
+
+        #### Modélisations prédictives 🤖
+        - Connaissances fondamentales sur les techniques de **régressions** et de **classifications**.
+        - Expérience avec des librairies telles que **SciPy**, **Scikit-learn**, et **XGBoost** pour l'implémentation de modèles.
+        
+        ### Cloud ☁️
+        - Bases sur Microsoft Azure.
+                     
+        #### GenAI 🧠
+        - **Ollama et Hugging Face** : Apprentissage en cours, je sais récupérer des modèles et les utiliser localement.
+                    
+        #### Analyses de données 📊
+        - **Compétences en analyses descriptives** : Utilisation de statistiques descriptives , facilitant une compréhension rapide des tendances, des moyennes, et de la variabilité au sein des jeux de données.
+        - **Nettoyage de données** : Capacité à traiter et à nettoyer les ensembles de données, incluant la gestion des valeurs manquantes, la correction des erreurs de format, et l'élimination des doublons, afin de garantir la précision des analyses. 
+        - **Manipulation de données** : Utilisation de SQL et Pandas pour effectuer des opérations.
+        - **Visualisation de données** : Utilisation de Seaborn, Plotly et Streamlit.
+
+        #### MLOps ⚙️
+        - **ML Flow** : Apprentissage en cours.
+        - **Docker** : Apprentissage en cours, je sais utiliser une image et écrire un Dockerfile.
+        - **CI/CD** : Familiarité avec les pipelines d'intégration et de déploiement continus pour maintenir la qualité du code.
+        - **Airflow** : CRON jobs.
+        
+        """)
+
+    with st.expander("Soft skills"):
+        st.write("")

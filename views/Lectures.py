@@ -19,7 +19,7 @@ with tab1:
     with st.expander("The Elements of Statistical Learning"):
         col1, col2 = st.columns(2, gap="small", vertical_alignment="center")
         with col1:
-            st.image("./assets/THE_EOSL.png", use_column_width="auto")
+            st.image("./assets/THE_EOS.png", use_column_width="auto")
 
         with col2:
             st.markdown(
@@ -37,7 +37,7 @@ with tab1:
     with st.expander("Data Mining et statistique décisionnelle"):
         col1, col2 = st.columns(2, gap="small", vertical_alignment="center")
         with col1:
-            st.image("./assets/DMSD.jpg", use_column_width="auto")
+            st.image("./assets/Data_mining.png", use_column_width="auto")
 
         with col2:
             st.markdown(
@@ -57,7 +57,7 @@ with tab1:
     with st.expander("Big Data, Machine Learning et Apprentissage profond"):
         col1, col2 = st.columns(2, gap="small", vertical_alignment="center")
         with col1:
-            st.image("./assets/bigdata.jpg", use_column_width="auto")
+            st.image("./assets/BigData.png", use_column_width="auto")
 
         with col2:
             st.markdown(
@@ -73,7 +73,7 @@ with tab1:
     with st.expander("Hands on Machine Learning with Scikit-Learn and TensorFlow"):
         col1, col2 = st.columns(2, gap="small", vertical_alignment="center")
         with col1:
-            st.image("./assets/DMSD.jpg", use_column_width="auto")
+            st.image("./assets/Hands_on_machine.png", use_column_width="auto")
 
         with col2:
             st.markdown(
@@ -89,7 +89,7 @@ with tab1:
     with st.expander("The Hundred-page Machine Learning book"):
         col1, col2 = st.columns(2, gap="small", vertical_alignment="center")
         with col1:
-            st.image("./assets/DMSD.jpg", use_column_width="auto")
+            st.image("./assets/hundred_page.png", use_column_width="auto")
 
         with col2:
             st.markdown(
@@ -108,7 +108,7 @@ with tab1:
         ):
             col1, col2 = st.columns(2, gap="small", vertical_alignment="center")
             with col1:
-                st.image("./assets/DMSD.jpg", use_column_width="auto")
+                st.image("./assets/designing_machine.png", use_column_width="auto")
 
             with col2:
                 st.markdown(
@@ -123,7 +123,7 @@ with tab1:
         with st.expander("Fundamentals of Data Engineering"):
             col1, col2 = st.columns(2, gap="small", vertical_alignment="center")
             with col1:
-                st.image("./assets/DMSD.jpg", use_column_width="auto")
+                st.image("./assets/fundamental_of_data.png", use_column_width="auto")
 
             with col2:
                 st.markdown(
