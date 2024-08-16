@@ -47,7 +47,7 @@ st.markdown(
     
     Ma passion réside dans la résolution de problèmes spécifiques et le développement d'applications qui optimisent les opérations quotidiennes des entreprises.
 
-    🔎 Je suis actuellement à la recherche d'un poste en CDI où je pourrai non seulement approfondir mes compétences, mais également apporter une contribution significative à l'entreprise.        
+    🔎 Je suis actuellement à la recherche d'un poste en CDI où je pourrai non seulement approfondir mes compétences mais aussi apporter une contribution significative à l'entreprise.        
     
         """,
     unsafe_allow_html=True,
