@@ -43,11 +43,12 @@ with col2:
 
 st.markdown(
     """
-    Data Scientist avec 3 ans d'expérience, je suis spécialisé dans la modélisation prédictive et l'optimisation de la chaîne de valeur des données dans le secteur bancaire. \
-    <br>
-    Je suis passionné par la résolution de problématiques métiers et le développement d'applications qui améliorent le quotidien de l'entreprise.
-            
-    🔎 Actuellement à la recherche d'un poste en CDI pour approfondir mes compétences tout en apportant une valeur ajoutée significative.
+    Data Scientist avec 3 ans d'expérience, je souhaite me spécialiser dans la modélisation prédictive et l'optimisation de la chaîne de valeur des données dans le secteur bancaire.
+    
+    Ma passion réside dans la résolution de problèmes spécifiques et le développement d'applications qui optimisent les opérations quotidiennes des entreprises.
+
+    🔎 Je suis actuellement à la recherche d'un poste en CDI où je pourrai non seulement approfondir mes compétences, mais également apporter une contribution significative à l'entreprise.        
+    
         """,
     unsafe_allow_html=True,
 )
@@ -213,8 +214,12 @@ with tab3:
     st.subheader("Mes projets", anchor=False)
     st.markdown(
         """
-        Tous mes différents projets sont disponibles sur <a href = 'https://github.com/surybang' target= '_blank'>GitHub</a> mais je vous propose de découvrir ici les plus significatifs.
+        Vous pouvez consulter l'ensemble de mes projets sur <a href='https://github.com/surybang' target='_blank'>GitHub</a>.
         
+        Les projets présentés se concentrent sur le **Data engineering**, domaine dans lequel je souhaite m'améliorer pour devenir un **Data Scientist aussi complet que possible**.
+        
+        D'autres projets, plus centrés sur la **Data Science**, seront ajoutés ultérieurement. Pour le moment, vous pouvez explorer mes notebooks R sur GitHub.
+
         ---
         """,
         unsafe_allow_html=True,

@@ -1,17 +1,6 @@
 import streamlit as st
 
 st.subheader("Mes lectures 📚")
-st.write(
-    """
-    Je suis un lecteur passionné, surtout intéressé par les ouvrages techniques qui me permettent de continuer à approfondir mes connaissances.
-
-    J'aime explorer les concepts complexes en statistiques, analyse de données et programmation. Ces lectures affinent mes compétences analytiques \
-    et me tiennent à jour sur les nouveautés de mon domaine. 
-    
-    Elles enrichissent aussi ma façon de penser et ma méthode de travail, que j'utilise \
-    pour trouver des solutions efficaces et adaptées dans mes projets professionnels et personnels.
-         """
-)
 
 
 tab1, tab2 = st.tabs(["Data science", "Data engineering"])
