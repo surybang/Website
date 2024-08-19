@@ -45,15 +45,12 @@ st.markdown(
     """
     Data Scientist avec 3 ans d'expérience, je souhaite me spécialiser dans la modélisation prédictive et l'optimisation de la chaîne de valeur des données dans le secteur bancaire.
     
-    Ma passion réside dans la résolution de problèmes spécifiques et le développement d'applications qui optimisent les opérations quotidiennes des entreprises.
-
-    🔎 Je suis actuellement à la recherche d'un poste en CDI où je pourrai non seulement approfondir mes compétences mais aussi apporter une contribution significative à l'entreprise.        
-    
+    Ma passion réside dans la résolution de problèmes spécifiques et le développement d'applications qui optimisent les opérations quotidiennes des entreprises.    
         """,
     unsafe_allow_html=True,
 )
 
-
+# 🔎 Je suis actuellement à la recherche d'un poste en CDI où je pourrai non seulement approfondir mes compétences mais aussi apporter une contribution significative à l'entreprise.  
 # -----------
 # Expériences
 # -----------
@@ -238,6 +235,8 @@ with tab3:
             L'application dispose également d'un système d'authentification. Pour un accès rapide en mode "invité", utilisez les identifiants suivants : **nom d'utilisateur/mot de passe : guest**.
 
             <a href='https://github.com/surybang/SQL-srs' target='_blank'>Lien vers le repos GitHub </a>
+            
+            <a href='https://sqlingo2.streamlit.app/' target='_blank'>Lien vers l'application sur le Community Cloud de Streamlit</a>
             
             <span style="font-variant-caps: small-caps;">langages de programmation utilisés</span> : Python et SQL   
             <span style="font-variant-caps: small-caps;">frameworks</span> : DuckDB, Streamlit
