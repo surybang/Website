@@ -1,9 +1,11 @@
+'''main page of the app'''
 import streamlit as st
 from forms.contact import contact_form
 
 
 @st.dialog("Contactez moi")
 def show_contact_form():
+    '''show contact_form'''
     contact_form()
 
 
@@ -21,9 +23,9 @@ with col2:
             show_contact_form()
 
     with col4:
-        pdf_file_path = "./assets/CV_FabienHOS_DataScientist.pdf"
+        PDF_FILE_PATH = "./assets/CV_FabienHOS_DataScientist.pdf"
 
-        with open(pdf_file_path, "rb") as pdf_file:
+        with open(PDF_FILE_PATH, "rb") as pdf_file:
             pdf_contents = pdf_file.read()
 
         # Bouton pour dl le CV
@@ -43,14 +45,17 @@ with col2:
 
 st.markdown(
     """
-    Data Scientist avec 3 ans d'expérience, je souhaite me spécialiser dans la modélisation prédictive et l'optimisation de la chaîne de valeur des données dans le secteur bancaire.
+    Data Scientist avec 3 ans d'expérience, je souhaite me spécialiser dans la modélisation \
+    prédictive et l'optimisation de la chaîne de valeur des données dans le secteur bancaire.
     
-    Ma passion réside dans la résolution de problèmes spécifiques et le développement d'applications qui optimisent les opérations quotidiennes des entreprises.    
+    Ma passion réside dans la résolution de problèmes spécifiques et le \
+    développement d'applications qui optimisent les opérations quotidiennes des entreprises.    
         """,
     unsafe_allow_html=True,
 )
 
-# 🔎 Je suis actuellement à la recherche d'un poste en CDI où je pourrai non seulement approfondir mes compétences mais aussi apporter une contribution significative à l'entreprise.  
+# 🔎 Je suis actuellement à la recherche d'un poste en CDI où je pourrai non seulement \
+# approfondir mes compétences mais aussi apporter une contribution significative à l'entreprise.  
 # -----------
 # Expériences
 # -----------
