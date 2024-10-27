@@ -1,12 +1,18 @@
-import streamlit as st
+# Contact.py
+
+import os
 import re
 import requests
 
+import streamlit as st
+from dotenv import load_dotenv
 
-EMAILJS_SERVICE_ID = st.secrets["emailjs"]["service_id"]
-EMAILJS_TEMPLATE_ID = st.secrets["emailjs"]["template_id"]
-EMAILJS_PUBLIC_KEY = st.secrets["emailjs"]["public_key"]
-EMAILJS_PRIVATE_KEY = st.secrets["emailjs"]["private_key"]
+
+load_dotenv()
+EMAILJS_SERVICE_ID = os.getenv("SERVICE_ID")
+EMAILJS_TEMPLATE_ID = os.getenv("TEMPLATE_ID")
+EMAILJS_PUBLIC_KEY = os.getenv("PUBLIC_KEY")
+EMAILJS_PRIVATE_KEY = os.getenv("PRIVATE_KEY")
 
 EMAILJS_URL = "https://api.emailjs.com/api/v1.0/email/send"
 
