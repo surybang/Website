@@ -69,7 +69,11 @@ with tab1:
         # + de missions, écriture de programmes SAS, traduction SAS -> Python,
         st.markdown(
             """
-            Je suis Data Scientist spécialisé dans la lutte contre la fraude depuis 2021. En tant qu'alternant au sein d'une équipe métier, j'ai réussi à **démocratiser l'utilisation du Machine Learning** pour améliorer l'activité.
+            Je suis Data Scientist spécialisé dans la lutte contre la fraude et l'optimisation des processus métiers des risques non-fiannciers depuis 2021. 
+            
+            En tant qu'alternant au sein d'une équipe métier, j'ai réussi à **démocratiser l'utilisation du Machine Learning** pour améliorer l'activité.
+            
+            Maintenant que je suis en **CDI** au sein du service data, je me concentre sur le déploiement en production et l'automatisation. 
 
             Faits notables :
 
