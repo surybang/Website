@@ -45,8 +45,8 @@ with col2:
 
 st.markdown(
     """
-    Data Scientist avec 3 ans d'expérience, je souhaite me spécialiser dans la modélisation \
-    prédictive et l'optimisation de la chaîne de valeur des données dans le secteur bancaire.
+    Data Scientist avec 3 ans d'expérience, je souhaite me spécialiser dans le déploiement de solutions Data & IA  \
+    ainsi que dans l'optimisation de la chaîne de valeur des données.
     
     Ma passion réside dans la résolution de problèmes spécifiques et le \
     développement d'applications qui optimisent les opérations quotidiennes des entreprises.    
@@ -69,7 +69,7 @@ with tab1:
         # + de missions, écriture de programmes SAS, traduction SAS -> Python,
         st.markdown(
             """
-            Je suis Data Scientist spécialisé dans la lutte contre la fraude et l'optimisation des processus métiers des risques non-fiannciers depuis 2021. 
+            Je suis Data Scientist spécialisé dans la lutte contre la fraude et l'optimisation des processus métiers des risques non-financiers depuis 2021. 
             
             En tant qu'alternant au sein d'une équipe métier, j'ai réussi à **démocratiser l'utilisation du Machine Learning** pour améliorer l'activité.
             
